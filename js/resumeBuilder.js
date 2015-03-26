@@ -5,7 +5,7 @@ var formattedRole;
 var bio = {
 	"name" : "Eduard Meciar",
 	"role" : "Front End Web Developer",
-	"contact": {
+	"contacts": {
 		"mobile": "+421 911 624 266",
 		"email": "edomeciar@gmail.com",
 		"github": "edomeciar",
@@ -13,22 +13,25 @@ var bio = {
 	},
 	"bioPic" : "https://media.licdn.com/mpr/mpr/shrink_500_500/p/3/000/10b/0c9/373adec.jpg",
 	"welcomeMessage" : "Ola Amigos!",
-	"skils" : ["Programing","JS","SQL","HTML","C#","And more..."],
-	"education" : {
+	"skils" : ["Programing","JS","SQL","HTML","C#","And more..."]
+};
+var education = {
 		"Schools"  : [
 			{
 				"name" : "Univesity of Zilina",
 				"degree" : "Bc.",
 				"dates" : "2007 - 2010",
 				"location" : "Zilina",
-				"major" : "Informatics"
+				"major" : "Informatics",
+				"url" : "http://www.fri.uniza.sk/en"
 			},
 			{
 				"name" : "Univesity of Zilina",
 				"degree" : "Ing",
 				"dates" : "2010 - 2013",
 				"location" : "Zilina",
-				"major" : "Applied Informatics"
+				"major" : "Applied Informatics",
+				"url" : "http://www.fri.uniza.sk/en"
 			}
 		],
 		"onlineCourses" : [
@@ -39,41 +42,44 @@ var bio = {
 				"url" : "https://www.udacity.com/course/ud775"
 			}
 		]
-	},
-	"work" : {
+	};
+
+var work = {
 		"jobs" :[
-				{
-					"employer" : "Accenture / Avanade",
-					"title" : "Programer",
-					"dates" : "2012 - 2013",
-					"location" : "Bratislava",
-					"description" : "Dynamics CRM Programer"
-				},
-				{
-					"employer" : "AT&T Slovakia",
-					"title" : "Programer / Softweare Architect",
-					"dates" : "2013 - Today",
-					"location" : "Bratislava",
-					"description" : "Front End / Back End Developer / Software Architect"
-				}
+			{
+				"employer" : "Accenture / Avanade",
+				"title" : "Programer",
+				"dates" : "2012 - 2013",
+				"location" : "Bratislava",
+				"description" : "Dynamics CRM Programer"
+			},
+			{
+				"employer" : "AT&T Slovakia",
+				"title" : "Programer / Softweare Architect",
+				"dates" : "2013 - Today",
+				"location" : "Bratislava",
+				"description" : "Front End / Back End Developer / Software Architect"
+			}
 			]
-	},
-	"projects" : [
+};
+
+var projects = {
+	projects : [
 		{
 			"title" : "SSR project",
 			"date" : "2014",
 			"description" : "Self Service Reporting intranet",
 			"images" : ["",""]
-		},
+		}
 	]
 };
 
 formattedName = HTMLheaderName.replace("%data%",bio.name);
 formattedRole = HTMLheaderRole.replace("%data%",bio.role);
-formattedMobile = HTMLmobile.replace("%data%",bio.contact.mobile);
-formattedEmail = HTMLemail.replace("%data%",bio.contact.email);
-formattedGithub = HTMLgithub.replace("%data%",bio.contact.github);
-formattedLocation = HTMLlocation.replace("%data%",bio.contact.location);
+formattedMobile = HTMLmobile.replace("%data%",bio.projects.mobile);
+formattedEmail = HTMLemail.replace("%data%",bio.projects.email);
+formattedGithub = HTMLgithub.replace("%data%",bio.projects.github);
+formattedLocation = HTMLlocation.replace("%data%",bio.projects.location);
 formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%",bio.welcomeMessage);
 formattedBioPic = HTMLbioPic.replace("%data%",bio.bioPic);
 
@@ -91,20 +97,20 @@ $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 $("#header").prepend(formattedBioPic);
 
-for (i = 0; i < bio.education.Schools.length; i++) {
-	addEducationSchool(bio.education.Schools[i]);
+for (i = 0; i < education.Schools.length; i++) {
+	addEducationSchool(education.Schools[i]);
 }
 $("#education").append(HTMLonlineClasses);
-for (i = 0; i < bio.education.onlineCourses.length; i++) {
-	addOnlineCourse(bio.education.onlineCourses[i]);
+for (i = 0; i < education.onlineCourses.length; i++) {
+	addOnlineCourse(education.onlineCourses[i]);
 }
 
-for (i = 0; i < bio.work.jobs.length; i++) {
-	addWork(bio.work.jobs[i]);
+for (i = 0; i < work.jobs.length; i++) {
+	addWork(work.jobs[i]);
 }
 
-for (i = 0; i < bio.projects.length; i++) {
-	addProject(bio.projects[i]);
+for (i = 0; i < projects.projects.length; i++) {
+	addProject(projects.projects[i]);
 }
 
 function addProject (_project){
