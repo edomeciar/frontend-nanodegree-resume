@@ -9,7 +9,7 @@ var bio = {
 		"github": "edomeciar",
 		"location": "Bratislava"
 	},
-	"bioPic" : "https://media.licdn.com/mpr/mpr/shrink_500_500/p/3/000/10b/0c9/373adec.jpg",
+	"bioPic" : "https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/10b/0c9/373adec.jpg",
 	"welcomeMessage" : "Ola Amigos!",
 	"skils" : ["Programing","JS","SQL","HTML","C#","And more..."]
 };
