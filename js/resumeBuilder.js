@@ -28,6 +28,10 @@ bio.display = function(){
 	$("#header").append(formattedBioPic);
 	$("#header").prepend(formattedRole);
 	$("#header").prepend(formattedName);
+	$("#name").click(function(){
+		var newName = inName($("#name").val());
+		$("#name").html(newName);
+	});
 	$("#topContacts").append(formattedLocation);
 	$("#topContacts").append(formattedGithub);
 	$("#topContacts").append(formattedEmail);
@@ -85,6 +89,12 @@ var education = {
 				"school" : "Lynda.com",
 				"dates" : "2015",
 				"url" : "http://www.lynda.com/JavaScript-tutorials/JavaScript-Functions/148137-2.html"
+			},
+			{
+				"title" : "jQuery Essential Training",
+				"school" : "Lynda.com",
+				"dates" : "2015",
+				"url" : "http://www.lynda.com/jQuery-tutorials/jQuery-Essential-Training/183382-2.html?srchtrk=index:1%0Alinktypeid:2%0Aq:jquery%0Apage:1%0As:relevance%0Asa:true%0Aproducttypeid:2"
 			}
 		]
 	};
@@ -234,7 +244,8 @@ work.display();
 education.display();
 projects.display();
 
-$("#main").append(internationalizeButton);
+//$("#main").append(internationalizeButton);
+
 $("#mapDiv").append(googleMap);
 initializeMap();
 

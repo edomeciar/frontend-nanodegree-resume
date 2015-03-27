@@ -150,6 +150,10 @@ img {
   padding: 10px;
 }
 
+.projectImg {
+  width:150px;
+}
+
 /* Bar chart stuff */
 .chart div {
   font: 10px sans-serif;
