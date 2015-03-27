@@ -116,15 +116,16 @@ function addEducationSchool(_shoolInfo){
 	formattedSchool += HTMLschoolDates.replace("%data%",_shoolInfo["dates"]);
 	formattedSchool += HTMLschoolLocation.replace("%data%",_shoolInfo["location"]);
 	formattedSchool += HTMLschoolMajor.replace("%data%",_shoolInfo["major"]);
-	$("#education div.education-entry:last").append(formattedSchool);
+	$(".education-entry:last").append(formattedSchool);
 };
 
 function addOnlineCourse (_onlineCourse){
 	$("#education").append(HTMLschoolStart);
-	$("#education div.education-entry:last").append(HTMLonlineTitle.replace("%data%",_onlineCourse["title"]));
-	$("#education div.education-entry:last").append(HTMLonlineSchool.replace("%data%",_onlineCourse["school"]));
-	$("#education div.education-entry:last").append(HTMLonlineDates.replace("%data%",_onlineCourse["dates"]));
-	$("#education div.education-entry:last").append(HTMLonlineURL.replace("%data%",_onlineCourse["url"]));
+	var formattedCourse = HTMLonlineTitle.replace("%data%",_onlineCourse["title"]);
+	formattedCourse += HTMLonlineSchool.replace("%data%",_onlineCourse["school"]);
+	formattedCourse += HTMLonlineDates.replace("%data%",_onlineCourse["dates"]);
+	formattedCourse += HTMLonlineURL.replace("%data%",_onlineCourse["url"]);
+	$("#education div.education-entry:last").append(formattedCourse);
 };
 
 var work = {
