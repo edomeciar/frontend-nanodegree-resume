@@ -149,7 +149,7 @@ var work = {
 				"title" : "Store assistent",
 				"dates" : "2011 - 2012",
 				"location" : "Zilina",
-				"description" : "Dynamics CRM Programer"
+				"description" : "Store assistent in apple premium reseller shop."
 			},
 			{
 				"employer" : "Accenture / Avanade",
