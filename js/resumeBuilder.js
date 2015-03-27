@@ -56,8 +56,8 @@ var education = {
 			},
 			{
 				"name" : "Univesity of Porto",
-				"degree" : "",
-				"dates" : "2011",
+				"degree" : "Erasmus",
+				"dates" : "spring semester 2011",
 				"location" : "Porto",
 				"major" : "Informatics",
 				"url" : "http://www.up.pt"
