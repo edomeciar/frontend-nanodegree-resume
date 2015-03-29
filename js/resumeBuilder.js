@@ -1,17 +1,15 @@
-
-
 var bio = {
-	"name" : "Eduard Meciar",
-	"role" : "Front End Web Developer",
+	"name": "Eduard Meciar",
+	"role": "Front End Web Developer",
 	"contacts": {
 		"mobile": "+421 911 624 266",
 		"email": "edomeciar@gmail.com",
 		"github": "edomeciar",
 		"location": "Bratislava"
 	},
-	"bioPic" : "https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/10b/0c9/373adec.jpg",
-	"welcomeMessage" : "Ola Amigos!",
-	"skils" : ["Programing","JS","SQL","HTML","C#","And more..."]
+	"bioPic": "https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/10b/0c9/373adec.jpg",
+	"welcomeMessage": "Ola Amigos!",
+	"skils": ["Programing","JS","SQL","HTML","C#","And more..."]
 };
 
 bio.display = function(){
@@ -45,56 +43,56 @@ bio.display = function(){
 };
 
 var education = {
-		"schools"  : [
+		"schools": [
 			{
-				"name" : "Univesity of Zilina",
-				"degree" : "Bc.",
-				"dates" : "2007 - 2010",
-				"location" : "Zilina",
-				"major" : "Informatics",
-				"url" : "http://www.fri.uniza.sk/en"
+				"name": "Univesity of Zilina",
+				"degree": "Bc.",
+				"dates": "2007 - 2010",
+				"location": "Zilina",
+				"major": "Informatics",
+				"url": "http://www.fri.uniza.sk/en"
 			},
 			{
-				"name" : "Univesity of Porto",
-				"degree" : "Erasmus",
-				"dates" : "spring semester 2011",
-				"location" : "Porto",
-				"major" : "Informatics",
-				"url" : "http://www.up.pt"
+				"name": "Univesity of Porto",
+				"degree": "Erasmus",
+				"dates": "spring semester 2011",
+				"location": "Porto",
+				"major": "Informatics",
+				"url": "http://www.up.pt"
 			},
 			{
-				"name" : "Univesity of Zilina",
-				"degree" : "Ing",
-				"dates" : "2010 - 2013",
-				"location" : "Zilina",
-				"major" : "Applied Informatics",
-				"url" : "http://www.fri.uniza.sk/en"
+				"name": "Univesity of Zilina",
+				"degree": "Ing",
+				"dates": "2010 - 2013",
+				"location": "Zilina",
+				"major": "Applied Informatics",
+				"url": "http://www.fri.uniza.sk/en"
 			}
 		],
-		"onlineCourses" : [
+		"onlineCourses": [
 			{
-				"title" : "Git",
-				"school" : "Udacity",
-				"dates" : "2015",
-				"url" : "https://www.udacity.com/course/ud775"
+				"title": "Git",
+				"school": "Udacity",
+				"dates": "2015",
+				"url": "https://www.udacity.com/course/ud775"
 			},
 			{
-				"title" : "JavaScript and JSON",
-				"school" : "Lynda.com",
-				"dates" : "2015",
-				"url" : "http://www.lynda.com/JavaScript-tutorials/JavaScript-JSON/114901-2.html"
+				"title": "JavaScript and JSON",
+				"school": "Lynda.com",
+				"dates": "2015",
+				"url": "http://www.lynda.com/JavaScript-tutorials/JavaScript-JSON/114901-2.html"
 			},
 			{
-				"title" : "JavaScript: Functions",
-				"school" : "Lynda.com",
-				"dates" : "2015",
-				"url" : "http://www.lynda.com/JavaScript-tutorials/JavaScript-Functions/148137-2.html"
+				"title": "JavaScript: Functions",
+				"school": "Lynda.com",
+				"dates": "2015",
+				"url": "http://www.lynda.com/JavaScript-tutorials/JavaScript-Functions/148137-2.html"
 			},
 			{
-				"title" : "jQuery Essential Training",
-				"school" : "Lynda.com",
-				"dates" : "2015",
-				"url" : "http://www.lynda.com/jQuery-tutorials/jQuery-Essential-Training/183382-2.html?srchtrk=index:1%0Alinktypeid:2%0Aq:jquery%0Apage:1%0As:relevance%0Asa:true%0Aproducttypeid:2"
+				"title": "jQuery Essential Training",
+				"school": "Lynda.com",
+				"dates": "2015",
+				"url": "http://www.lynda.com/jQuery-tutorials/jQuery-Essential-Training/183382-2.html?srchtrk=index:1%0Alinktypeid:2%0Aq:jquery%0Apage:1%0As:relevance%0Asa:true%0Aproducttypeid:2"
 			}
 		]
 	};
@@ -129,41 +127,41 @@ function addOnlineCourse (_onlineCourse){
 };
 
 var work = {
-		"jobs" :[
+		"jobs":[
 			{
-				"employer" : "Q-net",
-				"title" : "Network administrator",
-				"dates" : "2010 - 2011",
-				"location" : "Prievidza",
-				"description" : "Connecting new clients into company network. Network administration."
+				"employer": "Q-net",
+				"title": "Network administrator",
+				"dates": "2010 - 2011",
+				"location": "Prievidza",
+				"description": "Connecting new clients into company network. Network administration."
 			},
 			{
-				"employer" : "RAM",
-				"title" : "Cleaning",
-				"dates" : "Summer 2008, Summer 2009",
-				"location" : "Munich",
-				"description" : "Working for cleaning service company."
+				"employer": "RAM",
+				"title": "Cleaning",
+				"dates": "Summer 2008, Summer 2009",
+				"location": "Munich",
+				"description": "Working for cleaning service company."
 			},
 			{
-				"employer" : "iEvolution",
-				"title" : "Store assistent",
-				"dates" : "2011 - 2012",
-				"location" : "Zilina",
-				"description" : "Store assistent in apple premium reseller shop."
+				"employer": "iEvolution",
+				"title": "Store assistent",
+				"dates": "2011 - 2012",
+				"location": "Zilina",
+				"description": "Store assistent in apple premium reseller shop."
 			},
 			{
-				"employer" : "Accenture / Avanade",
-				"title" : "Programer",
-				"dates" : "2012 - 2013",
-				"location" : "Bratislava",
-				"description" : "Dynamics CRM Programer"
+				"employer": "Accenture / Avanade",
+				"title": "Programer",
+				"dates": "2012 - 2013",
+				"location": "Bratislava",
+				"description": "Dynamics CRM Programer"
 			},
 			{
-				"employer" : "AT&T Slovakia",
-				"title" : "Programer / Softweare Architect",
-				"dates" : "2013 - Today",
-				"location" : "Bratislava",
-				"description" : "Front End / Back End Developer / Software Architect"
+				"employer": "AT&T Slovakia",
+				"title": "Programer / Softweare Architect",
+				"dates": "2013 - Today",
+				"location": "Bratislava",
+				"description": "Front End / Back End Developer / Software Architect"
 			}
 			]
 };
@@ -187,22 +185,22 @@ function addWork(_workInfo){
 var projects = {
 	projects : [
 		{
-			"title" : "Ordering IT application for restaurants",
-			"date" : "2009-2010",
-			"description" : "University project about IT support for regular restaurations",
-			"images" : ["images/p_bc1.png","images/p_bc2.png","images/p_bc3.png"]
+			"title": "Ordering IT application for restaurants",
+			"date": "2009-2010",
+			"description": "University project about IT support for regular restaurations",
+			"images": ["images/p_bc1.png","images/p_bc2.png","images/p_bc3.png"]
 		},
 		{
-			"title" : "Inteligent home",
-			"date" : "2010-2012",
-			"description" : "University project inteligent IT technologies in home",
-			"images" : ["images/p_p1.png","images/p_p2.png","images/p_p3.png"]
+			"title": "Inteligent home",
+			"date": "2010-2012",
+			"description": "University project inteligent IT technologies in home",
+			"images": ["images/p_p1.png","images/p_p2.png","images/p_p3.png"]
 		},
 		{
-			"title" : "SSR project",
-			"date" : "2014",
-			"description" : "Self Service Reporting intranet",
-			"images" : ["images/p_ssr1.png","images/p_ssr2.png","images/p_ssr3.png"]
+			"title": "SSR project",
+			"date": "2014",
+			"description": "Self Service Reporting intranet",
+			"images": ["images/p_ssr1.png","images/p_ssr2.png","images/p_ssr3.png"]
 		}
 	]
 };
